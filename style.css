@@ -3,6 +3,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	background-color: var(--offwhite);
+
+	/* 
+	/* debug */
+	/* outline: 3px solid lightgreen !important;
+	background-color: rgb(0 100 0 / 0.05) !important; */
+
 }
 
 :root {
@@ -12,75 +18,98 @@
 	--yellow: #eaa133;
 	--offwhite: #fff3e1;
 	--white: #ffff;
+	--gray: #c3c3c3;
+
 }
 
+
 body {
-	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--gray);
+	max-height: 210px;
 }
 
 #logo {
-	background-color: var(--coffee);
-}
-
-#home {
-	background-color: var(--coffee);
-}
-
-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	background-color: var(--coffee);
-	color: var(--offwhite);
-}
-
-button {
-	text-decoration: none;
-	border: none;
-	outline: none;
 	background-color: transparent;
-	color: var(--offwhite);
-	cursor: pointer;
-	margin: 10px 10px;
-}
-
-button:hover {
-	transition: .5s;
-	color: var(--teal);
+	border-radius: 50%;
+	margin: 5px 0;
 }
 
 nav {
-	background-color: var(--coffee);
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	margin: 5px;
+	background-color: transparent;
 }
 
-img {
-	border-radius: 10px;
+a {
+	border: solid black 3px;
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 2px;
+	text-decoration: none;
+	background-color: var(--coffee);
+	color: var(--offwhite);
+	cursor: pointer;
+
 }
 
-.container {
 
-	margin: 25px 83px;
+
+a:hover {
+	transition: .5s;
+	color: var(--yellow);
 }
 
-.selfie {
-	justify-content: center;
+.aboutimg,
+.about,
+.abouttxt {
 	align-items: center;
-	align-content: center;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
 }
 
 #selfie {
-	border: solid;
+	background-color: transparent;
+	border: solid 2px var(--orange);
 	border-radius: 10px;
-	border-color: var(--orange);
+
 }
 
-.about {
+h2 {
+	text-transform: uppercase;
+}
+
+footer {
 	display: flex;
 	flex-direction: row;
+	background-color: var(--gray);
+	position: absolute;
+	bottom: -59.6px;
+	width: 100vw;
+
 }
+
+.footer {
+	margin: 15px auto;
+}
+
+.container {
+	max-width: 500px;
+	/* max-height: 700px; */
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+}
+
+@media (max-width: 900px) {}
