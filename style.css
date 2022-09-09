@@ -113,3 +113,53 @@ footer {
 }
 
 @media (max-width: 900px) {}
+
+form {
+	background-color: var(--orange);
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vh;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	border: solid var(--coffee);
+	margin: 50px auto;
+}
+
+form h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 10px;
+	border: solid var(--coffee);
+	background-color: var(--yellow);
+}
+
+form input,
+form textarea {
+	border: 0;
+	margin: 10px;
+	padding: 20px;
+	outline: none;
+	background: var(--offwhite);
+	border: solid var(--yellow);
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+form button {
+	padding: 15px;
+	background: var(--yellow);
+	font-size: 18px;
+	border: var(--coffee);
+	cursor: pointer;
+	border-radius: 30px;
+	width: 150px;
+	margin: 20px auto 0;
+	text-transform: uppercase;
+	border: solid var(--coffee);
+}
+
+form button:hover {
+	transition: .25s;
+	background-color: var(--teal);
+}
