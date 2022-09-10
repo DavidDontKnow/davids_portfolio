@@ -35,6 +35,7 @@ header {
 	flex-direction: column;
 	background-color: var(--gray);
 	max-height: 210px;
+	border-bottom: solid var(--coffee);
 }
 
 #logo {
@@ -69,20 +70,13 @@ a:hover {
 	color: var(--yellow);
 }
 
-.aboutimg,
-.about,
-.abouttxt {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: 0 auto;
-}
+
 
 #selfie {
 	background-color: transparent;
-	border: solid 2px var(--orange);
-	border-radius: 10px;
+	border: solid var(--yellow);
+	border-radius: 20px;
+	margin: 10px;
 
 }
 
@@ -97,22 +91,45 @@ footer {
 	position: absolute;
 	bottom: -59.6px;
 	width: 100vw;
+	border-top: solid var(--coffee);
 
 }
 
 .footer {
 	margin: 15px auto;
+
 }
 
 .container {
 	max-width: 500px;
-	/* max-height: 700px; */
 	display: flex;
 	flex-direction: column;
 	margin: 10px auto;
+	padding: 20px;
+	background: var(--orange);
+	border: solid var(--yellow);
+	border-radius: 30px;
+	font-size: 16px;
+	align-items: center;
 }
 
-@media (max-width: 900px) {}
+.container h2,
+.container p {
+	border: solid var(--yellow);
+	border-radius: 10px;
+	background-color: var(--offwhite);
+	padding: 5px;
+}
+
+.container h2 {
+	background-color: var(--yellow);
+	border: solid var(--coffee);
+}
+
+.container p {
+	text-align: center;
+}
+
 
 form {
 	background-color: var(--orange);
@@ -148,7 +165,7 @@ form button {
 	cursor: pointer;
 	border-radius: 30px;
 	width: 150px;
-	margin: 20px auto 0;
+	margin: 10px auto 0;
 	text-transform: uppercase;
 	border: solid var(--coffee);
 }
@@ -185,4 +202,14 @@ form button:hover {
 
 .thankscontainer h2 {
 	font-size: 35px;
+}
+
+body .contact {
+	background: var(--yellow);
+	border: solid var(--coffee);
+	border-radius: 30px;
+	font-size: 20pt;
+	text-align: center;
+	max-width: 600px;
+	margin: 10px auto;
 }
