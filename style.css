@@ -3,6 +3,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	background-color: var(--offwhite);
+
+	/* 
+	/* debug */
+	/* outline: 3px solid lightgreen !important;
+	background-color: rgb(0 100 0 / 0.05) !important; */
+
 }
 
 :root {
@@ -12,75 +18,198 @@
 	--yellow: #eaa133;
 	--offwhite: #fff3e1;
 	--white: #ffff;
+	--gray: #c3c3c3;
+
 }
 
+
 body {
-	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--gray);
+	max-height: 210px;
+	border-bottom: solid var(--coffee);
 }
 
 #logo {
-	background-color: var(--coffee);
-}
-
-#home {
-	background-color: var(--coffee);
-}
-
-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	background-color: var(--coffee);
-	color: var(--offwhite);
-}
-
-button {
-	text-decoration: none;
-	border: none;
-	outline: none;
 	background-color: transparent;
-	color: var(--offwhite);
-	cursor: pointer;
-	margin: 10px 10px;
-}
-
-button:hover {
-	transition: .5s;
-	color: var(--teal);
+	border-radius: 50%;
+	margin: 5px 0;
 }
 
 nav {
-	background-color: var(--coffee);
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	margin: 5px;
+	background-color: transparent;
 }
 
-img {
-	border-radius: 10px;
+a {
+	border: solid black 3px;
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 2px;
+	text-decoration: none;
+	background-color: var(--coffee);
+	color: var(--offwhite);
+	cursor: pointer;
+
+}
+
+
+
+a:hover {
+	transition: .5s;
+	color: var(--yellow);
+}
+
+
+
+#selfie {
+	background-color: transparent;
+	border: solid var(--yellow);
+	border-radius: 20px;
+	margin: 10px;
+
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--gray);
+	position: absolute;
+	bottom: -59.6px;
+	width: 100vw;
+	border-top: solid var(--coffee);
+
+}
+
+.footer {
+	margin: 15px auto;
+
 }
 
 .container {
-
-	margin: 25px 83px;
-}
-
-.selfie {
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	width: 100%;
-}
-
-#selfie {
-	border: solid;
-	border-radius: 10px;
-	border-color: var(--orange);
-}
-
-.about {
+	max-width: 500px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	margin: 10px auto;
+	padding: 20px;
+	background: var(--orange);
+	border: solid var(--yellow);
+	border-radius: 30px;
+	font-size: 16px;
+	align-items: center;
+}
+
+.container h2,
+.container p {
+	border: solid var(--yellow);
+	border-radius: 10px;
+	background-color: var(--offwhite);
+	padding: 5px;
+}
+
+.container h2 {
+	background-color: var(--yellow);
+	border: solid var(--coffee);
+}
+
+.container p {
+	text-align: center;
+}
+
+
+form {
+	background-color: var(--orange);
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vh;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	border: solid var(--coffee);
+	margin: 50px auto;
+}
+
+
+
+form input,
+form textarea {
+	border: 0;
+	margin: 10px;
+	padding: 20px;
+	outline: none;
+	background: var(--offwhite);
+	border: solid var(--yellow);
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+form button {
+	padding: 15px;
+	background: var(--yellow);
+	font-size: 18px;
+	border: var(--coffee);
+	cursor: pointer;
+	border-radius: 30px;
+	width: 150px;
+	margin: 10px auto 0;
+	text-transform: uppercase;
+	border: solid var(--coffee);
+}
+
+form button:hover {
+	transition: .25s;
+	background-color: var(--teal);
+}
+
+
+.thankyou {
+	background-color: var(--orange);
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vh;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	border: solid var(--coffee);
+	margin: 50px auto;
+	text-align: center;
+}
+
+.thankscontainer {
+	border: 0;
+	margin: 10px;
+	padding: 20px;
+	outline: none;
+	background: var(--offwhite);
+	border: solid var(--yellow);
+	border-radius: 30px;
+	font-size: 18px;
+}
+
+.thankscontainer h2 {
+	font-size: 35px;
+}
+
+body .contact {
+	background: var(--yellow);
+	border: solid var(--coffee);
+	border-radius: 30px;
+	font-size: 20pt;
+	text-align: center;
+	max-width: 600px;
+	margin: 10px auto;
 }
